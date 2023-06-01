@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+}
+
+.landing {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.landing .nav_section {
+  height: 10vh;
+  margin: 0 10vw;
+  padding: 0 10rem;
+  width: 80vw;
+  z-index: 99;
+}
+@media only screen and (max-width: 600px) {
+  .landing .nav_section {
+    margin: 0;
+    padding: 1rem 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+  }
+}
+.landing .nav_section nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing .nav_section nav .nav_logo {
+  color: #EEE5E9;
+  cursor: pointer;
+  font-family: "EB Garamond", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.landing .nav_section nav .nav_logo img {
+  max-width: 15rem;
+}
+.landing .nav_section nav .nav-btn {
+  color: #EEE5E9;
+  display: none;
+}
+.landing .nav_section nav a:link {
+  color: #EEE5E9;
+  text-decoration: none;
+}
+.landing .nav_section nav a:visited {
+  color: #EEE5E9;
+  text-decoration: none;
+}
+.landing .nav_section nav a:hover {
+  color: #52AA8A;
+}
+.landing .nav_section nav a:focus {
+  color: #52AA8A;
+  text-decoration: none;
+}
+.landing .nav_section nav ul {
+  display: flex;
+  list-style: none;
+  margin: 1rem;
+}
+.landing .nav_section nav ul li {
+  padding: 1em;
+  font-weight: 300;
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+.landing .nav_section nav .mobile_nav {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .landing .nav_section nav .desktop_nav {
+    display: none;
+  }
+  .landing .nav_section nav .mobile_nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    background: #52AA5E;
+    width: 100%;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .landing .nav_section nav .mobile_nav .close {
+    color: #52AA8A;
+    font-size: 2rem;
+    text-align: right;
+  }
+  .landing .nav_section nav .nav-btn {
+    display: block;
+    padding-right: 1rem;
+  }
+  .landing .nav_section nav .nav-btn span.material-symbols-outlined {
+    font-size: 40px;
+  }
+  .landing .nav_section nav a.nav_logo,
+  .landing .nav_section nav .quick_contact_section,
+  .landing .nav_section nav .about_section_text {
+    padding: 0 1rem;
+  }
+}
+.landing .header {
+  align-items: center;
+  color: #EEE5E9;
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: center;
+}
+.landing .header .content {
+  padding: 1rem 3rem;
+}
+.landing .header .content h1 {
+  font-family: "EB Garamond", serif;
+  font-weight: 300;
+}
+.landing .header .content p {
+  max-width: 50vw;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.intro {
+  padding: 3rem 0;
+}
+.intro .card {
+  border: 0;
+  padding: 4rem 0;
+}
+.intro .garden-bg-1 {
+  background-image: url("../img/garden-1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+.intro .garden-bg-2 {
+  background-image: url("../img/garden-2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+.intro .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+  height: 30vh;
+  text-align: center;
+}
+.intro .card-body .card-title {
+  font-family: "EB Garamond", serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.intro .card-body .card-text {
+  padding: 0 2rem;
+}
+
+.work {
+  background: #2f2f2f;
+  color: #EEE5E9;
+  padding: 5rem 0 7rem;
+  text-align: center;
+}
+.work h2 {
+  font-family: "EB Garamond", serif;
+}
+.work .work-group {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  margin: 5rem 0 3rem;
+}
+.work .work-group .card__section {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 50px;
+  position: relative;
+}
+.work .work-group .card__section .card__inner {
+  background: rgba(255, 255, 255, 0.1294117647);
+  border-radius: 10px 10px 0 0;
+  color: #F3F3F3;
+  display: block;
+  padding: calc(20px + 30%) 35px 10px;
+  position: relative;
+  width: 100%;
+}
+.work .work-group .card__section .card__image {
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 3px 9px 0px #4b4b4b;
+  height: auto;
+  margin: 0 auto -30%;
+  position: relative;
+  width: 90%;
+  z-index: 1;
+}
+.work a.cta {
+  border-bottom: 1px solid;
+  color: #F3F3F3;
+  cursor: pointer;
+  padding-bottom: 0.3rem;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.work a.cta:hover {
+  border-bottom: 2px solid;
+  border-radius: 5px;
+  color: #52AA8A;
+  padding-bottom: 0.4rem;
+  transition: 0.5s;
+}
+
+.quote {
+  padding: 6rem 0;
+  display: flex;
+  align-items: center;
+}
+.quote img {
+  width: 80vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 70vh;
+  -o-object-position: center;
+     object-position: center;
+}
+.quote .form-group {
+  background: #2f2f2f;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -5px 0px 10px rgba(243, 243, 243, 0.3019607843);
+  padding: 2rem 3rem 3rem;
+  margin: 0 0 0 -5rem;
+  max-width: 20vw;
+  text-align: center;
+}
+.quote .form-group h3 {
+  color: #F3F3F3;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 1rem;
+}
+.quote .form-group input {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

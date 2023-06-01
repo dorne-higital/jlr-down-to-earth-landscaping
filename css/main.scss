@@ -1,0 +1,354 @@
+// Theme styles
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+$font-main: 'Quicksand', sans-serif;
+$font-header: 'EB Garamond', serif;
+$font-secondary: 'Montserrat', sans-serif;
+$font-drawn: 'Caveat', cursive;
+
+$text-primary: #000000;
+$text-secondary: #EEE5E9;
+
+$background-primary: #F3F3F3;
+$background-secondary: #2f2f2f;
+
+$color-1: #388659;
+$color-2: #52AA5E;
+$color-3: #52AA8A;
+$color-4: #3AAED8;
+$color-5: #2bd9fe;
+
+$border-radius: 0px;
+
+// css resets
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: $font-main;
+}
+
+
+
+.landing {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    .nav_section {
+        height: 10vh;
+        margin: 0 10vw;
+        padding: 0 10rem;
+        width: 80vw;
+        z-index: 99;
+
+        @media only screen and (max-width: 600px) {
+            margin: 0;
+            padding: 1rem 0;
+            position: absolute;
+            top: 0;
+            width: 100vw;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .nav_logo {
+                color: $text-secondary;
+                cursor: pointer;
+                font-family: $font-header;
+                font-size: 1.5rem;
+                font-weight: 700;
+
+                img {
+                    max-width: 15rem;
+                }
+            }
+
+            .nav-btn {
+                color: $text-secondary;
+                display: none;
+            }
+
+            a:link {
+                color: $text-secondary;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: $text-secondary;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: $color-3;
+                // text-decoration: underline;
+            }
+
+            a:focus {
+                color: $color-3;
+                text-decoration: none;
+            }
+
+            ul {
+                display: flex;
+                list-style: none;
+                margin: 1rem;
+
+                li {
+                    padding: 1em;
+                    font-weight: 300;
+                    font-size: 1em;
+                    letter-spacing: 2px;
+                }
+            }
+
+            .mobile_nav {
+                display: none;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .desktop_nav {
+                    display: none;
+                }
+
+                .mobile_nav {
+                    display: none;
+                    flex-direction: column;
+                    position: fixed;
+                    top: 0;
+                    background: $color-2;
+                    width: 100%;
+                    z-index: 99;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+
+                    .close {
+                        color: $color-3;
+                        font-size: 2rem;
+                        text-align: right;
+                    }
+                }
+
+                .nav-btn {
+                    display: block;
+                    padding-right: 1rem;
+                }
+
+                .nav-btn span.material-symbols-outlined {
+                    font-size: 40px;
+                }
+
+                a.nav_logo,
+                .quick_contact_section,
+                .about_section_text {
+                    padding: 0 1rem;
+                }
+
+            }
+
+        }
+    }
+
+    .header {
+        align-items: center;
+        color: $text-secondary;
+        display: flex;
+        flex-direction: column;
+        height: 75vh;
+        justify-content: center;
+
+        .content {
+            // background: linear-gradient(rgb(39 39 39 / 30%), rgb(195 195 195 / 31%));
+            // border-left: 1px solid $color-1;
+            // border-right: 1px solid $color-1;
+            padding: 1rem 3rem;
+
+            h1 {
+                font-family: $font-header;
+                font-weight: 300;
+            }
+
+            p {
+                max-width: 50vw;
+                padding-top: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.intro {
+    padding: 3rem 0;
+
+    .card {
+        border: 0;
+        padding: 4rem 0;
+
+
+    }
+
+    .garden-bg-1 {
+        background-image: url('../img/garden-1.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 30vh;
+    }
+
+    .garden-bg-2 {
+        background-image: url('../img/garden-2.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 30vh;
+    }
+
+    .card-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column;
+        height: 30vh;
+        text-align: center;
+
+        .card-title {
+            font-family: $font-header;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+
+        .card-text {
+            padding: 0 2rem;
+        }
+    }
+}
+
+.work {
+    background: $background-secondary;
+    color: $text-secondary;
+    padding: 5rem 0 7rem;
+    text-align: center;
+
+    h2 {
+        font-family: $font-header;
+    }
+
+    .work-group {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        margin: 5rem 0 3rem;
+
+        .card__section {
+            display: block;
+            overflow: hidden;
+            padding-bottom: 50px;
+            position: relative;
+
+            .card__inner {
+                background: #ffffff21;
+                border-radius: 10px 10px 0 0;
+                color: $background-primary;
+                display: block;
+                padding: calc(20px + 30%) 35px 10px;
+                position: relative;
+                width: 100%;
+            }
+        
+            .card__image {
+                border-radius: 0 0 10px 10px;
+                box-shadow: 0px 3px 9px 0px #4b4b4b;
+                height: auto;
+                margin: 0 auto -30%;
+                position: relative;
+                width: 90%;
+                z-index: 1;
+            }
+        }
+    }
+
+    a.cta {
+        border-bottom: 1px solid;
+        color: $background-primary;
+        cursor: pointer;
+        padding-bottom: 0.3rem;
+        text-decoration: none;
+        transition: 0.5s;
+
+        &:hover {
+            border-bottom: 2px solid;
+            border-radius: 5px;
+            color: $color-3;
+            padding-bottom: 0.4rem;
+            transition: 0.5s;
+        }
+    }
+    
+}
+
+.quote {
+    padding: 6rem 0;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 80vw;
+        object-fit: cover;
+        height: 70vh;
+        object-position: center;
+    }
+
+    .form-group {
+        background: $background-secondary;
+        border-radius: 10px 0 0 10px;
+        box-shadow: -5px 0px 10px #f3f3f34d;
+        padding: 2rem 3rem 3rem;
+        margin: 0 0 0 -5rem;
+        max-width: 20vw;
+        text-align: center;
+
+        h3 {
+            color: $background-primary;
+            font-family: $font-header;
+            margin-bottom: 1rem;
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+}
