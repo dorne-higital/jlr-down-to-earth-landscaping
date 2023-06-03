@@ -53,7 +53,9 @@ body {
     font-family: $font-main;
 }
 
-
+h1, h2, h3, h4, h5 {
+    font-family: $font-header;
+}
 
 .landing {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header-bg.jpg');
@@ -195,7 +197,6 @@ body {
             padding: 1rem 3rem;
 
             h1 {
-                font-family: $font-header;
                 font-weight: 300;
             }
 
@@ -260,10 +261,6 @@ body {
     color: $text-secondary;
     padding: 5rem 0 7rem;
     text-align: center;
-
-    h2 {
-        font-family: $font-header;
-    }
 
     .work-group {
         align-items: center;
@@ -335,7 +332,7 @@ body {
     .form-group {
         background: $background-secondary;
         border-radius: 10px 0 0 10px;
-        box-shadow: -5px 0px 10px #f3f3f34d;
+        box-shadow: -5px 0px 10px #f3f3f320;
         padding: 2rem 3rem 3rem;
         margin: 0 0 0 -5rem;
         max-width: 20vw;
@@ -343,7 +340,6 @@ body {
 
         h3 {
             color: $background-primary;
-            font-family: $font-header;
             margin-bottom: 1rem;
         }
 
@@ -377,5 +373,38 @@ body {
                 transition: 0.4s;
             }
         }
+    }
+}
+
+.footer {
+    background-color: $background-secondary;
+    color: $background-primary;
+    padding: 3rem 0;
+
+    h3 {
+        padding-bottom: 1.5rem;
+    }
+
+    a {
+        color: $background-primary;
+        text-decoration: none;
+        transition: 0.2s;
+
+        &:hover {
+            color: $color-3;
+            transition: 0.2s;
+        }
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .copyright {
+        border-top: 1px solid #ffffff21;
+        margin-top: 1rem;
+        padding-top: 2rem;
     }
 }
