@@ -61,6 +61,11 @@ h5 {
     font-family: $font-header;
 }
 
+.margin-clear {
+    margin: 0 !important;
+    font-style: italic;
+}
+
 
 .nav_section {
     height: 10vh;
@@ -608,9 +613,51 @@ h5 {
             }
         }
     }
+
+    .success-section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        justify-content: center;
+
+        .contact-success {
+            color: $color-1;
+        }
+
+        .lead {
+            text-align: center;
+            
+            a {
+                border-bottom: 1px solid;
+                color: $background-secondary;
+                cursor: pointer;
+                padding-bottom: 0.1rem;
+                text-decoration: none;
+                transition: 0.15s;
+
+                &:hover {
+                    border-bottom: 1px solid;
+                    border-radius: 5px;
+                    color: $color-1;
+                    padding-bottom: 0.2rem;
+                    transition: 0.2s;
+                }
+
+                &:visited {
+                    color: $background-secondary;
+                }
+
+                &:focus {
+                    color: $color-1;
+                }
+            }
+        }
+    }
 }
 
-.terms {
+.terms,
+.privacy {
     margin: 5rem;
 
     @media only screen and (max-width: 600px) {
@@ -623,5 +670,9 @@ h5 {
 
     .indent {
         padding-left: 1.5rem;
+    }
+
+    .list-indent {
+        padding-left: 3.5rem;
     }
 }

@@ -37,6 +37,11 @@ h5 {
   font-family: "EB Garamond", serif;
 }
 
+.margin-clear {
+  margin: 0 !important;
+  font-style: italic;
+}
+
 .nav_section {
   height: 10vh;
   margin: 0 10vw;
@@ -539,18 +544,60 @@ h5 {
   border: 4px solid #52AA8A;
   transition: 0.4s;
 }
+.contact-form .success-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: center;
+}
+.contact-form .success-section .contact-success {
+  color: #388659;
+}
+.contact-form .success-section .lead {
+  text-align: center;
+}
+.contact-form .success-section .lead a {
+  border-bottom: 1px solid;
+  color: #2f2f2f;
+  cursor: pointer;
+  padding-bottom: 0.1rem;
+  text-decoration: none;
+  transition: 0.15s;
+}
+.contact-form .success-section .lead a:hover {
+  border-bottom: 1px solid;
+  border-radius: 5px;
+  color: #388659;
+  padding-bottom: 0.2rem;
+  transition: 0.2s;
+}
+.contact-form .success-section .lead a:visited {
+  color: #2f2f2f;
+}
+.contact-form .success-section .lead a:focus {
+  color: #388659;
+}
 
-.terms {
+.terms,
+.privacy {
   margin: 5rem;
 }
 @media only screen and (max-width: 600px) {
-  .terms {
+  .terms,
+  .privacy {
     margin: 3rem 1rem;
   }
 }
-.terms h4 {
+.terms h4,
+.privacy h4 {
   padding: 1rem 0;
 }
-.terms .indent {
+.terms .indent,
+.privacy .indent {
   padding-left: 1.5rem;
+}
+.terms .list-indent,
+.privacy .list-indent {
+  padding-left: 3.5rem;
 }/*# sourceMappingURL=main.css.map */

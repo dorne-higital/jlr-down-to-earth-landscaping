@@ -32,7 +32,11 @@
             href="img/favicon/favicon-16x16.png"
         />
         <link rel="manifest" href="img/favicon/site.webmanifest" />
-        <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <link
+            rel="mask-icon"
+            href="img/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
 
@@ -154,57 +158,14 @@
                         </div>
                     </div>
                     <div class="col-md-7">
-                        <section class="form-group">
-                            <h3>Leave your details and we will get it touch</h3>
-                            <form action="mail.php" method="POST">
-                                <div class="row">
-                                    <div class="col">
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            id="name"
-                                            placeholder="Your name"
-                                            required
-                                        />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            id="email"
-                                            placeholder="Email address"
-                                            required
-                                        />
-                                    </div>
-                                    <div class="col">
-                                        <input
-                                            type="number"
-                                            name="phone_number"
-                                            id="phone_number"
-                                            placeholder="Contact number"
-                                            required
-                                        />
-                                    </div>
-                                </div>
-                                <input
-                                    type="text"
-                                    name="location"
-                                    id="location"
-                                    placeholder="Location"
-                                    required
-                                />
-                                <textarea
-                                    name=""
-                                    id=""
-                                    rows="6"
-                                    placeholder="What work do you need?"
-                                    required
-                                ></textarea>
-                                <button type="submit" value="Send">Send</button>
-                            </form>
-                        </section>
+                        <div class="success-section">
+                            <h3 id="success" class="contact-success">Thank you for your enquiry</h3>
+                            <p class="lead">
+                                We will try and get back to you as soon as possible.
+                                If your request is urgent, please call us on
+                                <a href="tel:07123456789">07123456789</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
