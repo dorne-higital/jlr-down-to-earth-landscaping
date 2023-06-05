@@ -110,21 +110,22 @@ h5 {
     flex-direction: column;
     position: fixed;
     top: 0;
-    background: #52AA5E;
+    background: #2f2f2f;
+    color: #F3F3F3;
     width: 100%;
     z-index: 99;
     margin: 0;
-    padding: 0;
+    padding: 0 0 2rem;
     text-align: center;
   }
   .nav_section nav .mobile_nav .close {
-    color: #52AA8A;
+    color: #F3F3F3;
     font-size: 2rem;
     text-align: right;
   }
   .nav_section nav .nav-btn {
     display: block;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
   }
   .nav_section nav .nav-btn span.material-symbols-outlined {
     font-size: 40px;
@@ -132,7 +133,7 @@ h5 {
   .nav_section nav a.nav_logo,
   .nav_section nav .quick_contact_section,
   .nav_section nav .about_section_text {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 }
 

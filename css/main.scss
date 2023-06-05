@@ -146,15 +146,16 @@ h5 {
                 flex-direction: column;
                 position: fixed;
                 top: 0;
-                background: $color-2;
+                background: $background-secondary;
+                color: $background-primary;
                 width: 100%;
                 z-index: 99;
                 margin: 0;
-                padding: 0;
+                padding: 0 0 2rem;
                 text-align: center;
 
                 .close {
-                    color: $color-3;
+                    color: $background-primary;
                     font-size: 2rem;
                     text-align: right;
                 }
@@ -162,7 +163,7 @@ h5 {
 
             .nav-btn {
                 display: block;
-                padding-right: 1rem;
+                padding-right: 1.5rem;
             }
 
             .nav-btn span.material-symbols-outlined {
@@ -172,7 +173,7 @@ h5 {
             a.nav_logo,
             .quick_contact_section,
             .about_section_text {
-                padding: 0 1rem;
+                padding: 0 1.5rem;
             }
 
         }
