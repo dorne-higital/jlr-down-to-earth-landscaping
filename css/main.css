@@ -538,4 +538,19 @@ h5 {
 .contact-form .form-section .form-group button:hover {
   border: 4px solid #52AA8A;
   transition: 0.4s;
+}
+
+.terms {
+  margin: 5rem;
+}
+@media only screen and (max-width: 600px) {
+  .terms {
+    margin: 3rem 1rem;
+  }
+}
+.terms h4 {
+  padding: 1rem 0;
+}
+.terms .indent {
+  padding-left: 1.5rem;
 }/*# sourceMappingURL=main.css.map */
